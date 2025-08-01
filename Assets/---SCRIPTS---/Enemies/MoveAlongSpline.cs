@@ -7,40 +7,60 @@ public class MoveAlongSpline : MonoBehaviour
 {
     public event Action<MoveAlongSpline> OnTargetReached;
 
-    [CustomHeader("Settings")]
-    [SerializeField] private float _loopTime;
-
     [CustomHeader("Debug")]
-    [SerializeField] private float _currentLoopTime;
+    [SerializeField] private float _splineT;
     [SerializeField] private SplineContainer _currentSplineContainer;
 
-    private bool _targetReached = false;
+    private float _loopTime;
+    private float _splineLength;
+    private bool _targetReached;
 
     public void Initialize(float loopTime)
     {
-        _currentSplineContainer = PathHolder.Instance.GetInitialSplineContainer();
-
         _loopTime = loopTime;
-        _currentLoopTime = 0f;
+        _splineT = 0f;
+        _targetReached = false;
+
+        _currentSplineContainer = PathHolder.Instance.GetInitialSplineContainer();
+        if (_currentSplineContainer == null)
+        {
+            Debug.LogError("Initial spline container is null.");
+            return;
+        }
+
+        _splineLength = SplineUtility.CalculateLength(
+            _currentSplineContainer.Spline,
+            _currentSplineContainer.transform.localToWorldMatrix
+        );
     }
-    
+
     private void Update()
     {
-        Movement();
+        MoveAlong();
     }
 
     public void SetNewSpline(SplineContainer splineContainer)
     {
         _currentSplineContainer = splineContainer;
+        _splineT = 0f;
+
+        _splineLength = SplineUtility.CalculateLength(
+            _currentSplineContainer.Spline,
+            _currentSplineContainer.transform.localToWorldMatrix
+        );
     }
 
-    private void Movement()
+    private void MoveAlong()
     {
-        if (_targetReached) return;
+        if (_targetReached || _currentSplineContainer == null) return;
 
-        if (_currentLoopTime >= 1f)
+        float speed = 1f / _loopTime; // move t from 0 to 1 over loopTime
+        _splineT += Time.deltaTime * speed;
+
+        if (_splineT >= 1f)
         {
-            _currentLoopTime = 0f;
+            _splineT = 0f;
+
             _currentSplineContainer = PathHolder.Instance.GetNextSplineContainer(_currentSplineContainer);
 
             if (_currentSplineContainer == null)
@@ -49,22 +69,17 @@ public class MoveAlongSpline : MonoBehaviour
                 _targetReached = true;
                 return;
             }
+
+            _splineLength = SplineUtility.CalculateLength(
+                _currentSplineContainer.Spline,
+                _currentSplineContainer.transform.localToWorldMatrix
+            );
         }
 
-        _currentLoopTime += Time.deltaTime / _loopTime;
-
-        var spline = _currentSplineContainer.Spline;
-        float t = Mathf.Clamp01(_currentLoopTime);
-
-        // Local position along the spline
-        var localPos = SplineUtility.EvaluatePosition(spline, t);
-
-        // Convert local position to world position
-        var worldPos = _currentSplineContainer.transform.TransformPoint(localPos);
+        // Evaluate world position at current t
+        Vector3 localPos = SplineUtility.EvaluatePosition(_currentSplineContainer.Spline, _splineT);
+        Vector3 worldPos = _currentSplineContainer.transform.TransformPoint(localPos);
 
         transform.position = worldPos;
     }
-
-
-
 }
