@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
 
     private void DealDamage()
     {
-        Debug.Log("Damage dealt");
+        Throne.Instance.TakeDamage(_enemyData.Damage);
         Death();
     }
 

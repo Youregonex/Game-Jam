@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: c1ccb6f9b9b78a542bf0ad0deddc0fbf
+guid: 34c1091a65c15f34b81dffa24f94ea02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8814157231650666793
-    second: EnemyWalkAnimationW_0
+      213: 6645569083000629428
+    second: TreeIdleAnimation_0
   - first:
-      213: 4199111818264004782
-    second: EnemyWalkAnimationW_1
+      213: -3028714908975888894
+    second: TreeIdleAnimation_1
   - first:
-      213: 8770592721519518601
-    second: EnemyWalkAnimationW_2
+      213: -2048918275664598034
+    second: TreeIdleAnimation_2
   - first:
-      213: -4881595293935429109
-    second: EnemyWalkAnimationW_3
+      213: 1088843377148200573
+    second: TreeIdleAnimation_3
   - first:
-      213: -1262431683398041427
-    second: EnemyWalkAnimationW_4
+      213: 7502845724009848379
+    second: TreeIdleAnimation_4
   - first:
-      213: 4458256885382763208
-    second: EnemyWalkAnimationW_5
+      213: 7625550865092785708
+    second: TreeIdleAnimation_5
   - first:
-      213: 1611394880144064343
-    second: EnemyWalkAnimationW_6
+      213: 8610952519159236443
+    second: TreeIdleAnimation_6
   - first:
-      213: 6719568716084892590
-    second: EnemyWalkAnimationW_7
+      213: -6770672264090681697
+    second: TreeIdleAnimation_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_0
+      name: TreeIdleAnimation_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,21 +155,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9297af28d4d225a70800000000000000
-      internalID: 8814157231650666793
+      spriteID: 4b8229a0fddc93c50800000000000000
+      internalID: 6645569083000629428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_1
+      name: TreeIdleAnimation_1
       rect:
         serializedVersion: 2
         x: 100
@@ -177,21 +177,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea845cb63fd364a30800000000000000
-      internalID: 4199111818264004782
+      spriteID: 206009c46d7d7f5d0800000000000000
+      internalID: -3028714908975888894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_2
+      name: TreeIdleAnimation_2
       rect:
         serializedVersion: 2
         x: 200
@@ -199,21 +199,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9832cc39c9767b970800000000000000
-      internalID: 8770592721519518601
+      spriteID: eeba4351fa7c093e0800000000000000
+      internalID: -2048918275664598034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_3
+      name: TreeIdleAnimation_3
       rect:
         serializedVersion: 2
         x: 300
@@ -221,21 +221,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0a92c7a1f6114cb0800000000000000
-      internalID: -4881595293935429109
+      spriteID: d7684f658495c1f00800000000000000
+      internalID: 1088843377148200573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_4
+      name: TreeIdleAnimation_4
       rect:
         serializedVersion: 2
         x: 400
@@ -243,21 +243,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da08cd59211fa7ee0800000000000000
-      internalID: -1262431683398041427
+      spriteID: b3e5a282f667f1860800000000000000
+      internalID: 7502845724009848379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_5
+      name: TreeIdleAnimation_5
       rect:
         serializedVersion: 2
         x: 500
@@ -265,21 +265,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c2dda23409eedd30800000000000000
-      internalID: 4458256885382763208
+      spriteID: c2637822c1663d960800000000000000
+      internalID: 7625550865092785708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_6
+      name: TreeIdleAnimation_6
       rect:
         serializedVersion: 2
         x: 600
@@ -287,21 +287,21 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75fbedf1b13dc5610800000000000000
-      internalID: 1611394880144064343
+      spriteID: b57cd3281bf308770800000000000000
+      internalID: 8610952519159236443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemyWalkAnimationW_7
+      name: TreeIdleAnimation_7
       rect:
         serializedVersion: 2
         x: 700
@@ -309,15 +309,15 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 9
-      pivot: {x: 0.5, y: 0.35}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea3511e3524b04d50800000000000000
-      internalID: 6719568716084892590
+      spriteID: f9ef848c27db902a0800000000000000
+      internalID: -6770672264090681697
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5ad923e0d47cce24da70cf9aa0cc7669
+    spriteID: 8560b345109d1e54294f768c8cfaef3a
     internalID: 0
     vertices: []
     indices: 
@@ -338,14 +338,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":100.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      EnemyWalkAnimationW_0: 8814157231650666793
-      EnemyWalkAnimationW_1: 4199111818264004782
-      EnemyWalkAnimationW_2: 8770592721519518601
-      EnemyWalkAnimationW_3: -4881595293935429109
-      EnemyWalkAnimationW_4: -1262431683398041427
-      EnemyWalkAnimationW_5: 4458256885382763208
-      EnemyWalkAnimationW_6: 1611394880144064343
-      EnemyWalkAnimationW_7: 6719568716084892590
+      TreeIdleAnimation_0: 6645569083000629428
+      TreeIdleAnimation_1: -3028714908975888894
+      TreeIdleAnimation_2: -2048918275664598034
+      TreeIdleAnimation_3: 1088843377148200573
+      TreeIdleAnimation_4: 7502845724009848379
+      TreeIdleAnimation_5: 7625550865092785708
+      TreeIdleAnimation_6: 8610952519159236443
+      TreeIdleAnimation_7: -6770672264090681697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

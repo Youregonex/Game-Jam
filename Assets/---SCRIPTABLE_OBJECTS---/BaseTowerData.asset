@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: TestTower
   <Icon>k__BackingField: {fileID: -3233622716010706100, guid: e0ab039c732767442b2ff90c97b1518b, type: 3}
   <Prefab>k__BackingField: {fileID: 0}
-  <Size>k__BackingField: 0.3
+  <Size>k__BackingField: 0.1
   <Cost>k__BackingField: 1
   <Damage>k__BackingField: 1
   <AttackRate>k__BackingField: 1

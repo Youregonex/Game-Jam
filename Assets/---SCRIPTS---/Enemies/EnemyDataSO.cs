@@ -9,5 +9,6 @@ namespace Yg.Enemies
         [field: SerializeField] public Sprite Icon { get; private set; }
         [field: SerializeField] public float LoopTime { get; private set; }
         [field: SerializeField] public float Health { get; private set; }
+        [field: SerializeField] public float Damage { get; private set; }
     }
 }
