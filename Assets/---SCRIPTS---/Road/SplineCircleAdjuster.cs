@@ -27,7 +27,7 @@ namespace Yg.Misc
 
             for (int i = 0; i < _totalPoints; i++)
             {
-                float angle = i * Mathf.PI * 2f / _totalPoints;
+                float angle = Mathf.PI - i * Mathf.PI * 2f / _totalPoints;
                 float x = _splineCenter.x + _radius * Mathf.Cos(angle);
                 float y = _splineCenter.y + _radius * Mathf.Sin(angle);
                 position = new Vector3(x, y, 0);

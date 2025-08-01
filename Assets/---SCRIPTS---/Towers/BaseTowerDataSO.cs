@@ -7,18 +7,12 @@ namespace Yg.Towers
     public class BaseTowerDataSO : ScriptableObject
     {
         [field: SerializeField] public string Name { get; private set; }
-        [field: SerializeField] public string Id { get; private set; }
         [field: SerializeField] public Sprite Icon { get; private set; }
         [field: SerializeField] public Tower Prefab { get; private set; }
         [field: SerializeField] public float Size { get; private set; }
         [field: SerializeField] public float Cost { get; private set; }
         [field: SerializeField] public float Damage { get; private set; }
-
-
-        private void OnValidate()
-        {
-            if (string.IsNullOrEmpty(Id))
-                Id = Guid.NewGuid().ToString();
-        }
+        [field: SerializeField] public float AttackRate { get; private set; }
+        [field: SerializeField] public float AttackRange { get; private set; }
     }
 }
